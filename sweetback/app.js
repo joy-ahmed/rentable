@@ -1,11 +1,13 @@
 import express from 'express'
+import authRoute from './routers/_authRoute.js'
 
 const app = express()
 const PORT = 3000 || proccess.env.PORT
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+app.use('/auth', authRoute)
 
 
 app.listen(PORT, () => {
