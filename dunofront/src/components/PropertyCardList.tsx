@@ -20,7 +20,7 @@ const PropertyCardList = () => {
         <hr className="mt-4" />
       </div>
 
-      <div className="container mx-auto flex justify-between flex-col md:flex-row">
+      <div className="container mx-auto flex flex-wrap justify-between flex-col md:flex-row">
         <PropertyCard />
         <PropertyCard />
         <PropertyCard />
