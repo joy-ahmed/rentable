@@ -1,13 +1,14 @@
-
-import './App.css'
+import "./App.css";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 function App() {
-
   return (
     <>
-      <p className='text-3xl text-purple-600'>Hi Mom</p>
+      <Navbar />
+      <Hero />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
