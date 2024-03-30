@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <header className="bg-white">
       <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
         <div className="w-32">
-          <a className="block text-teal-600" href="/">
+          <Link className="block text-teal-600" to="/">
             <span className="sr-only">Home</span>
             <img src="/logo.png" alt="logo" className="w-full object-cover" />
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-1 items-center justify-end md:justify-between">
@@ -23,13 +25,13 @@ const Navbar = () => {
               </li>
 
               <li>
-                <a
+                <Link
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/properties"
+                  to="/properties"
                 >
                   {" "}
                   Properties{" "}
-                </a>
+                </Link>
               </li>
 
               <li>
@@ -66,25 +68,25 @@ const Navbar = () => {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-              <a
+              <Link
                 className="block rounded-md bg-cyan-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-cyan-600"
-                href="#"
+                to="/login"
               >
                 <div className="flex gap-2">
                   Login
                   <i className="ri-user-shared-2-line text-[16px]"></i>
                 </div>
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-cyan-500 transition hover:text-cyan-600/75 sm:block"
-                href="#"
+                to="/register"
               >
                 <div className="flex gap-2">
                   <i className="ri-user-3-line text-[16px]"></i>
                   Register
                 </div>
-              </a>
+              </Link>
             </div>
 
             <button className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">

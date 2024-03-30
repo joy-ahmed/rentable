@@ -1,0 +1,17 @@
+.wraper{
+    display: flex;
+    overflow-y: hidden;
+}
+
+.right{
+    height: 100vh;
+    width: 100vw;
+    background: cyan
+}
+
+.left{
+    height: 100vh;
+    width: 100vw;
+    background: teal;
+    overflow-y: scroll;
+}
