@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom scrollbar styles */
+.custom-scrollbar {
+    scrollbar-width: thin; /* "auto" or "thin" or "none" */
+    scrollbar-color: rgba(120, 120, 120, 0.8) rgba(185, 185, 185, 0.3); /* scroll thumb color and track color */
+  }
+  
+  /* Customize the scrollbar track */
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: rgba(185, 185, 185, 0.3); /* Track color */
+    border-radius: 18px; /* Rounded corners */
+  }
+  
+  /* Customize the scrollbar thumb */
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 100, 209, 0.8); /* Scroll thumb color */
+    border-radius: 18px; /* Rounded corners */
+  }
+  
+  /* Customize the scrollbar corner */
+  .custom-scrollbar::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
