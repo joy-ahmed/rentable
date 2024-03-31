@@ -1,13 +1,13 @@
-
 import { listData } from "../../lib/data";
 import ListCard from "../../components/ListCard";
 import Navbar from "../../components/Navbar";
 import Filter from "../../components/Filter";
+import Map from "../../components/Map";
 
 const PropertiesList = () => {
   const data = listData;
   return (
-    <div className="h-screen overflow-y-hidden">
+    <div className="h-screen md:overflow-y-hidden">
       <Navbar />
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5">
@@ -28,8 +28,8 @@ const PropertiesList = () => {
               </div>
             </div>
           </div>
-          <div className="h-32 rounded-lg bg-gray-200 lg:col-span-2">
-            map container
+          <div className="h-[90vh] my-auto overflow-hidden rounded-lg bg-gray-200 lg:col-span-2">
+            <Map items={data} />
           </div>
         </div>
       </div>
