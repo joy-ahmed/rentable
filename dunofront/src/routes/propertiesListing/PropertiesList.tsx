@@ -29,7 +29,7 @@ const PropertiesList = () => {
             </div>
           </div>
           <div className="h-[90vh] my-auto overflow-hidden rounded-lg bg-gray-200 lg:col-span-2">
-            <Map items={data} />
+            <Map items={data} containerHeight="h-[100vh]" />
           </div>
         </div>
       </div>

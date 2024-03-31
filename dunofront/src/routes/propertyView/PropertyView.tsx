@@ -2,11 +2,12 @@ import { RiMapPin2Line } from "react-icons/ri";
 import SliderImage from "../../components/SliderImage";
 import { singlePostData as data } from "../../lib/data";
 import { userData as user } from "../../lib/data";
+import Aminities from "../../components/Aminities";
 
 function PropertyView() {
   return (
-    <div className="container mx-auto flex flex-col md:flex-row">
-      <div className="h-screen w-full">
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-5">
+      <div className="h-screen col-span-3">
         {/* image container */}
         <div className="px-4 py-2">
           <SliderImage images={data.images} />
@@ -35,7 +36,9 @@ function PropertyView() {
           <p>{data.description}</p>
         </div>
       </div>
-      <div className="h-screen w-full bg-green-300"></div>
+      <div className="h-screen col-span-2">
+        <Aminities items={data} />
+      </div>
     </div>
   );
 }

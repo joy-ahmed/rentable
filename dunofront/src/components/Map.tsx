@@ -3,13 +3,13 @@ import "leaflet/dist/leaflet.css";
 import Markers from "./Markers";
 import { ListCardProps } from "./ListCard";
 
-const Map = ({ items }: { items: ListCardProps }) => {
+const Map = ({ items, containerHeight }: { items: ListCardProps, containerHeight: string }) => {
   return (
     <MapContainer
       center={[37.27, -35.26]}
       zoom={3}
       scrollWheelZoom={true}
-      className="h-screen"
+      className={containerHeight}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
